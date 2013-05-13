@@ -416,7 +416,7 @@ else
 //alert(que_id);
 var question=localStorage.que_id;
 var uid1=localStorage.uname;
-  var flickerAPI = "http://50.56.237.229/scrolldemo/examples/simple/thinking.php?jsoncallback=?&ld="+question+"&uid="+uid1;
+  var flickerAPI = "http://50.56.237.229/scroll/examples/simple/thinking.php?jsoncallback=?&ld="+question+"&uid="+uid1;
   $.getJSON( flickerAPI, {
     tags: "mount rainier",
     tagmode: "any",
@@ -424,7 +424,7 @@ var uid1=localStorage.uname;
   })
   .done(function( data ) {
   //alert('success');
-  window.location.href='category.htm';
+ window.location.href='category.htm';
 	
     });
  
